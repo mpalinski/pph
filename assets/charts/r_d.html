@@ -1,0 +1,162 @@
+<html>
+
+<head>
+    
+  <!-- Plotly.js -->
+             <meta charset="utf-8"> 
+
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+  
+  <div id="myDiv" style="width: 480px; height: 400px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+  <script>
+    <!-- JAVASCRIPT CODE GOES HERE -->
+      var procent_PKB = {
+          name: "Wielkość koła: udział sektorowych wyd. B+R w PKB",
+  x: [326.3,
+ 10335.5,
+ 74.6,
+ 4711.8,
+ 1052.4,
+ 795.5,
+ 1.9,
+ 136.0,
+ 531.7,
+ 459.1,
+ 0.2,
+ 253.5,
+ 631.2,
+ 13625.5,
+ 1282.0,
+ 291.4,
+ 33.7,
+ 138.8,
+ 118.0,
+ 34.4,
+ 8.1,
+ 248.0,
+ 178.7,
+ 52655.2],
+  y: [9.2,
+ 7.6,
+ 7.1,
+ 58.2,
+ 186.5,
+ 17.1,
+ 1.5,
+ 24.9,
+ 8.2,
+ 46.5,
+ 0.7,
+ 30.9,
+ 10.4,
+ 107.1,
+ 25.3,
+ 17.3,
+ 6.6,
+ 3.6,
+ 11.3,
+ 1.7,
+ 1.5,
+ 120.3,
+ 2.3,
+ 165.1],
+  mode: 'markers+text',
+  marker: {
+    color: 'rgb(93, 164, 214)',
+  
+    size: [15.021307289711617,
+ 20.159521552568222,
+ 15.450848609019161,
+ 24.08324761446794,
+ 29.82153719292354,
+ 19.636324463731643,
+ 8.153342676983527,
+ 20.47679573037452,
+ 15.032570916289917,
+ 26.028125177254047,
+ 2.078351961028776,
+ 22.528257085983576,
+ 16.799099079502245,
+ 28.05183722995958,
+ 21.601531806667992,
+ 17.8548852788074,
+ 11.47657454288533,
+ 13.2888332158194,
+ 18.375394020610877,
+ 10.63471467046359,
+ 8.238414490032845,
+ 29.829138006250684,
+ 11.336916242844827,
+ 28.55440183448779]
+
+},
+          
+  text: ['Kanada',
+ "Chiny",
+ 'Czechy',
+ 'Niemcy',
+ 'Dania',
+ 'Hiszpania',
+ 'Estonia',
+ 'Finlandia',
+ 'Wielka Brytania',
+ 'Węgry',
+ 'Islandia',
+ 'Izrael',
+ 'Włochy',
+ 'Japonia',
+ 'Korea',
+ 'Holandia',
+ 'Norwegia',
+ 'Polska',
+ 'Portugalia',
+ 'Rumunia',
+ 'Słowacja',
+ 'Słowenia',
+ 'Turcja',
+ 'USA']
+
+,
+    textposition: 'top center',
+    textfont: {
+    family:  'Raleway, sans-serif'
+  }
+  
+};
+
+var data = [procent_PKB];
+
+var layout = {
+    
+    
+ xaxis: {
+    title: 'mln USD (PPP: wg parytetu siły nabywczej, skala log)',
+    type: 'log',
+    autorange: false
+  },
+  yaxis: {
+    title: 'mln USD per capita (PPP: wg parytetu siły nabywczej, skala log)',
+    type: 'log',
+    autorange: true
+  },
+  title: 'Wydatki na B+R w sektorze farmaceutycznym w krajach OECD w 2014 r.',
+    showlegend: true,
+  height: 600,
+  width: 1200,
+        legend:   {x: -.05,
+    y: -.2}
+
+};
+
+      
+Plotly.newPlot('myDiv', data, layout);
+  </script>
+</body>
+
+
+
+
+</html>

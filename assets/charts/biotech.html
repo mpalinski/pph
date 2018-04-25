@@ -1,0 +1,46 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+<body>
+
+<canvas id="line-chart" width="w50" height="h25"></canvas>
+
+<script>
+
+
+Chart.defaults.global.animation.duration = 1000;
+Chart.defaults.global.defaultFontSize = 15;
+Chart.defaults.global.legend.position = 'bottom';
+Chart.defaults.global.elements.line.tension = 0
+
+new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+  data: {
+    labels: [2012,2013,2014,2015,2016],
+    datasets: [{
+        data: [24,114,277,393,2931],
+        label: "Wydatki na biotechnologię",
+        backgroundColor: 'rgb(29, 35, 92,.7)',
+        borderColor: "#1d235c",
+        fill: origin
+      }
+    ]
+  },
+  options: {
+      animation: {
+        easing: 'linear'
+      },
+    title: {
+      display: false,
+      text: 'wydatki na biotechnologię'
+    }
+  }
+});
+
+</script>
+</body>
+</html>

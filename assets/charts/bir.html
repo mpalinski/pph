@@ -1,0 +1,79 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+
+<body>
+
+<canvas id="bar-chart-grouped" width="w50" height="h25"></canvas>
+
+<script>
+Chart.defaults.global.animation.duration = 1500;
+Chart.defaults.global.defaultFontSize = 15;
+Chart.defaults.global.legend.position = 'bottom'
+
+new Chart(document.getElementById("bar-chart-grouped"), {
+    type: 'bar',
+    data: {
+      labels: ["2013", "2014", "2015", "2016"],
+      datasets: [
+        {
+          label: "Udział pracowników B&R PPH w B&R sektora",
+          backgroundColor: "#1d235c",
+          data: [20.3,35.3,39.1,42]
+        }, {
+          label: "Udział pracowników B&R PPH w PPH",
+          backgroundColor: "#abadb8",
+          data: [6.5,9.9,10.6,11]
+        },
+        {
+          label: "Udział pracowników B&R w sektorze",
+          backgroundColor: "#3c9fab",
+          data: [6.5,5.7,5.2,5.6]
+        }
+      ]
+
+    },
+
+    options: {
+      animation: {
+        easing: 'easeOutBounce'
+    },
+      title: {
+        display: false,
+        text: 'Pracownicy B&R'
+      },
+    scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero: true,
+                max: 50,
+                fontColor: "rgba(0,0,0,0.5)",
+                fontStyle: "bold",
+                padding: 20
+            }
+        }],
+
+        xAxes: [{
+            ticks: {
+                fontColor: "rgba(0,0,0,0.5)",
+                fontStyle: "bold",
+                padding: 20
+    }
+        }]
+
+    }
+      }
+});
+
+var Chart = {
+	segmentShowStroke : false,
+	animateScale : true
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<html>
+<canvas id="bar-chart-horizontal"></canvas>
+
+<head>
+	<meta charset="UTF-8">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+<body>
+    
+<script>
+    
+new Chart(document.getElementById("bar-chart-horizontal"), {
+    type: 'horizontalBar',
+    data: {
+      labels: ['GALAZOLIN',
+'TRICHOPOL',
+'AQUADETRIM',
+'PYRANTEL',
+'BOBOTIC',
+'AQUADETRIM VIT.',
+'FITOLIZYN PASTA',
+'TROMBOPOL',
+'TRIGRIM',
+'BIO-TAKSYM'],
+      datasets: [
+        {
+          label: "Liczba sprzedanych sztuk w 2015 r.",
+          backgroundColor: "#024594",
+          data: [14.9,
+6.5,
+5.0,
+4.1,
+2.4,
+2.2,
+2.2,
+2.1,
+1.8,
+1.7]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Leki o największym udziale w wolumenie sprzedaży (2015 r., mln sztuk)'
+      }
+    }
+});
+</script>
+</body>
+</html>

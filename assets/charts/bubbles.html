@@ -1,0 +1,237 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+</head>
+
+<body>
+<div class="chart-container" style="position: relative; height:60vh; width:60vw">
+<canvas id="bubble-chart"></canvas>
+</div>
+<script>
+
+new Chart(document.getElementById("bubble-chart"), {
+    type: 'bubble',
+    data: {
+      labels: "kraje",
+      datasets: [
+        {
+          label: ["Austria"],
+          backgroundColor: "#3cb44b",
+          // borderColor: "rgba(255,221,50,1)",
+          data: [{
+            x: 38,
+            y: 18,
+            r: 3550/8633169*1e5
+
+          }]
+        }, {
+          label: ["Belgia"],
+          backgroundColor: "#ffe119",
+          // borderColor: "rgba(60,186,159,1)",
+          data: [{
+            x: 39,
+            y: 13,
+            r: 4708/11274196*1e5
+          }]
+        }, {
+          label: ["Czechy"],
+          backgroundColor: "#0082c8",
+          // borderColor: "#000",
+          data: [{
+            x: 60,
+            y: 30,
+            r: 2290/10546059*1e5
+          }]
+        }, {
+          label: ["Dania"],
+          backgroundColor: "#f58231",
+          // borderColor: "rgba(193,46,12,1)",
+          data: [{
+            x: 60,
+            y: 14,
+            r: 2306/5683483*1e5
+          }]
+        },
+        {
+          label: ["Finlandia"],
+          backgroundColor: "#911eb4",
+          // borderColor: "rgba(193,46,12,1)",
+          data: [{
+            x: 48,
+            y: 19,
+            r: 2246/5479531*1e5
+          }]
+        },
+        {
+          label: ["Francja"],
+          backgroundColor: "#46f0f0",
+          // borderColor: "rgba(193,46,12,1)",
+          data: [{
+            x: 52,
+            y: 22,
+            r: 27645/66624068*1e5
+          }]
+        },
+        {
+          label: ["Niemcy"],
+          backgroundColor: "#f032e6",
+          // borderColor: "rgba(193,46,12,1)",
+          data: [{
+            x: 73,
+            y: 20,
+            r: 30038/81686611*1e5
+          }]
+        },
+        {
+          label: ["Grecja"],
+          backgroundColor: "#d2f53c",
+          // borderColor: "rgba(193,46,12,1)",
+          data: [{
+            x: 27,
+            y: 19,
+            r: 4058/10820883*1e5
+          }]
+        },
+        {
+          label: ["Węgry"],
+          backgroundColor: "#fabebe",
+          // borderColor: "rgba(193,46,12,1)",
+          data: [{
+            x: 53,
+            y: 27,
+            r: 2133/9843028*1e5
+          }]
+        },
+        {
+          label: ["Irlandia"],
+          backgroundColor: "#008080",
+          // borderColor: "rgba(193,46,12,1)",
+          data: [{
+            x: 49,
+            y: 22,
+            r: 1818/4676835*1e5
+          }]
+        },
+        {
+          label: ["Włochy"],
+          backgroundColor: "#e6beff",
+          // borderColor: "rgba(193,46,12,1)",
+          data: [{
+            x: 41,
+            y: 16,
+            r: 22703/60730582*1e5
+          }]
+        },
+        {
+          label: ["Łotwa"],
+          backgroundColor: "#aa6e28",
+          // borderColor: "rgba(193,46,12,1)",
+          data: [{
+            x: 75,
+            y: 45,
+            r: 238/1977527*1e5
+          }]
+        },
+        {
+          label: ["Holandia"],
+          backgroundColor: "#fffac8",
+          // borderColor: "rgba(193,46,12,1)",
+          data: [{
+            x: 66,
+            y: 22,
+            r: 4821/16939923*1e5
+          }]
+        },
+        {
+          label: ["Polska"],
+          backgroundColor: "#e6194b",
+          // borderColor: "rgba(193,46,12,1)",
+          data: [{
+            x: 69,
+            y: 41,
+            r: 5587/37986412*1e5
+          }]
+        },
+        {
+          label: ["Portugalia"],
+          backgroundColor: "#800000",
+          // borderColor: "rgba(193,46,12,1)",
+          data: [{
+            x: 50,
+            y: 30,
+            r: 2933/10358076*1e5
+          }]
+        },
+        {
+          label: ["Słowacja"],
+          backgroundColor: "#aaffc3",
+          // borderColor: "rgba(193,46,12,1)",
+          data: [{
+            x: 57,
+            y: 23,
+            r: 1184/5423801*1e5
+          }]
+        },
+        {
+          label: ["Hiszpania"],
+          backgroundColor: "#808000",
+          // borderColor: "rgba(193,46,12,1)",
+          data: [{
+            x: 51,
+            y: 18,
+            r: 15625/46447697*1e5
+          }]
+        },
+        {
+          label: ["Szwecja"],
+          backgroundColor: "#ffd8b1",
+          // borderColor: "rgba(193,46,12,1)",
+          data: [{
+            x: 55,
+            y: 13,
+            r: 3809/9799186*1e5
+          }]
+        },
+        {
+          label: ["Wielka Brytania"],
+          backgroundColor: "#000080",
+          // borderColor: "rgba(193,46,12,1)",
+          data: [{
+            x: 66,
+            y: 27,
+            r: 22375/65128861*1e5
+          }]
+        }
+      ]
+    },
+    options: {
+      legend: {
+          display: false
+        },
+      title: {
+        display: false,
+        text: 'Wartość vs. wielkość rynku leków generycznych'
+      }, scales: {
+        yAxes: [{
+          scaleLabel: {
+            display: true,
+            labelString: "Udział leków generycznych w całości rynku (wartość sprzedaży)"
+          }
+        }],
+        xAxes: [{
+          scaleLabel: {
+            display: true,
+            labelString: "Udział leków generycznych w całości rynku (wolumen sprzedaży)"
+          }
+        }]
+      },
+      responsive: true,
+      maintainAspectRatio: true
+    }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+{
+ "name": "PPH",
+ "children": [
+  {
+   "name": "Osteoporoza",
+   "children": [
+    {
+     "name": "Leczenie osteoporozy: Alendronian Sodu",
+     "children": [
+  {"name": "Polska", "size": 25}
+
+
+     ]
+    },
+{
+"name": "Profilaktyka i leczenie osteoporozy: Risendronian Sodu",
+   "children": [
+  {"name": "Polska", "size": 25},
+  {"name": "Korea Południowa", "size": 25},
+  {"name": "Japonia", "size": 25},
+  {"name": "Niemcy", "size": 25},
+  {"name": "Hiszpania", "size": 25},
+  {"name": "Włochy", "size": 25},
+  {"name": "Czechy", "size": 25},
+  {"name": "Węgry", "size": 25},
+  {"name": "Turcja", "size": 25},
+  {"name": "Wielka Brytania", "size": 25},
+  {"name": "Francja", "size": 25},
+  {"name": "Słowenia", "size": 25},
+  {"name": "Chorwacja", "size": 25},
+  {"name": "Szwajcaria", "size": 25}
+]
+}
+]},
+
+  {
+   "name": "Zaburzenia erekcji",
+   "children": [
+    {
+     "name": "Cytrynian Sildenafilu",
+     "children": [
+  {"name": "Polska", "size": 25},
+  {"name": "Armenia", "size": 25},
+    {"name": "Białoruś", "size": 25},
+    {"name": "Azerbejdżan", "size": 25},
+    {"name": "Kirgistan", "size": 25},
+    {"name": "Kazachstan", "size": 25},
+    {"name": "Rosja", "size": 25},
+    {"name": "Tadżykistan", "size": 25},
+    {"name": "Turkmenistan", "size": 25}
+     ]
+    },
+{
+"name": "Wardenafil",
+   "children": [
+  {"name": "Polska", "size": 25}
+]
+}
+]},
+
+  {
+   "name": "Zmiany nowotworowe kości",
+   "children": [
+    {
+     "name": "Kwas Zoledronowy",
+     "children": [
+  {"name": "Polska", "size": 25}
+
+
+     ]
+    }
+    ]},
+    
+{
+   "name": "Ochrona układu nerwowego: Aniracetam",
+   "children": [
+    {
+     "name": "Aniracetam",
+     "children": [
+{"name": "Polska", "size": 25},
+  {"name": "Czechy", "size": 25},
+    {"name": "Francja", "size": 25},
+    {"name": "Niemcy", "size": 25},
+    {"name": "Grecja", "size": 25},
+    {"name": "Włochy", "size": 25},
+    {"name": "Holandia", "size": 25},
+    {"name": "Hiszpania", "size": 25},
+    {"name": "Turcja", "size": 25},
+        {"name": "Wielka Brytania", "size": 25},
+    {"name": "Japonia", "size": 25},
+    {"name": "Korea Południowa", "size": 25},
+        {"name": "USA", "size": 25},
+            {"name": "Słowacja", "size": 25}
+
+
+
+
+     ]
+    }
+    ]},
+  
+{
+   "name": "Ból",
+   "children": [
+    {
+     "name": "Indapamid, Tramadol (połączenie)",
+     "children": [
+  {"name": "Polska", "size": 25}
+     ]
+    },
+{
+"name": "Ibuprofen, Paracetamol (połączenie)",
+   "children": [
+  {"name": "Polska", "size": 25}
+]
+}
+]},
+  
+{
+   "name": "Leczenie pęcherza nadreaktywnego: Solifenacin",
+   "children": [
+    {
+     "name": "Solifenacin",
+     "children": [
+  {"name": "Polska", "size": 25}
+
+
+     ]
+    }
+    ]},
+    
+{
+   "name": "Grzybica: Voriconazole",
+   "children": [
+    {
+     "name": "Voriconazole",
+     "children": [
+  {"name": "Polska", "size": 25}
+
+
+     ]
+    }
+    ]},
+    
+{
+   "name": "Otyłość: Orlistat",
+   "children": [
+    {
+     "name": "Orlistat",
+     "children": [
+  {"name": "Polska", "size": 25}
+
+
+     ]
+    }
+    ]},
+    
+
+    
+{
+   "name": "Depresja: Tianeptyna",
+   "children": [
+    {
+     "name": "Tianeptyna",
+     "children": [
+  {"name": "Polska", "size": 25},
+    {"name": "Bułgaria", "size": 25}
+
+
+
+     ]
+    }
+    ]},
+    
+{
+   "name": "Nadciśnienie: Metoprolol",
+   "children": [
+    {
+     "name": "Metoprolol",
+     "children": [
+  {"name": "Polska", "size": 25},
+    {"name": "Nowa Zelandia", "size": 25},
+      {"name": "Holandia", "size": 25},
+        {"name": "Dania", "size": 25},
+          {"name": "Szwajcaria", "size": 25},
+            {"name": "Szwecja", "size": 25},
+              {"name": "Niemcy", "size": 25}
+
+
+
+
+
+
+
+
+     ]
+    }
+    ]}
+ ]
+}
