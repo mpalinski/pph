@@ -35,8 +35,8 @@ Plotly.d3.csv('./data/pph_trade2015.csv', function(err, rows){
           }];
 
   var layout = {
-     width: '1200',
-        height: '500',
+     width: 1500,
+        height: 1500,
           title: '',
 
           geo: {
@@ -48,6 +48,7 @@ Plotly.d3.csv('./data/pph_trade2015.csv', function(err, rows){
             },
 
   },
+
   margin: {
            l: 0,
            r: 0,
@@ -56,7 +57,16 @@ Plotly.d3.csv('./data/pph_trade2015.csv', function(err, rows){
            pad: 2
        }
       };
-      Plotly.plot(myDiv, data, layout, {showLink: false});
+
+      Plotly.plot(myDiv, data, layout, {showLink: false}, {
+  modeBarButtonsToAdd: [{
+    name: 'toImage2',
+    icon: Plotly.Icons.camera,
+    click: function(gd) {
+      Plotly.downloadImage(gd, {format: 'svg'})
+    }
+  }]
+});
   });
 
 </script>
