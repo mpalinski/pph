@@ -1,15 +1,15 @@
 <html>
 
 <head>
-    
+
   <!-- Plotly.js -->
-             <meta charset="utf-8"> 
+             <meta charset="utf-8">
 
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
 <body>
-  
+
   <div id="myDiv" style="width: 480px; height: 400px;"><!-- Plotly chart will be drawn inside this DIV --></div>
   <script>
     <!-- JAVASCRIPT CODE GOES HERE -->
@@ -65,8 +65,8 @@
  165.1],
   mode: 'markers+text',
   marker: {
-    color: 'rgb(93, 164, 214)',
-  
+    color: '#94bde5',
+
     size: [15.021307289711617,
  20.159521552568222,
  15.450848609019161,
@@ -93,7 +93,7 @@
  28.55440183448779]
 
 },
-          
+
   text: ['Kanada',
  "Chiny",
  'Czechy',
@@ -124,26 +124,29 @@
     textfont: {
     family:  'Raleway, sans-serif'
   }
-  
+
 };
 
 var data = [procent_PKB];
 
 var layout = {
-    
-    
+
+
  xaxis: {
     title: 'mln USD (PPP: wg parytetu siły nabywczej, skala log)',
+    // exponentformat: 'power',
     type: 'log',
-    autorange: false
+    showgrid: false,
+    autorange: true,
   },
   yaxis: {
     title: 'mln USD per capita (PPP: wg parytetu siły nabywczej, skala log)',
     type: 'log',
+    showgrid: false,
     autorange: true
   },
   title: 'Wydatki na B+R w sektorze farmaceutycznym w krajach OECD w 2014 r.',
-    showlegend: true,
+  showlegend: true,
   height: 600,
   width: 1200,
         legend:   {x: -.05,
@@ -151,7 +154,7 @@ var layout = {
 
 };
 
-      
+
 Plotly.newPlot('myDiv', data, layout);
   </script>
 </body>
