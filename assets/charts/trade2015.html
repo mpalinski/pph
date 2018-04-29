@@ -18,12 +18,15 @@ Plotly.d3.csv('./data/pph_trade2015.csv', function(err, rows){
   // console.log(unpack(rows, 'postal'));
  var data = [{
     colorscale: [
-            [0, 'rgb(1, 26, 54)'],
+            // [0, 'rgb(1, 26, 54)'],
+            [0, '#f6f5fa'],
             // [0.35, 'rgb(40, 60, 190)'],
-            [0.5, 'rgb(70, 100, 245)'],
+            // [0.5, 'rgb(70, 100, 245)'],
+            [0.5, '#62aafd'],
+
             // [0.6, 'rgb(90, 120, 245)'],
             // [0.7, 'rgb(106, 137, 247)'],
-            [1, 'rgb(231, 234, 236)']
+            [1, '#024594']
         ],
               type: 'choropleth',
               locationmode: 'country codes',
@@ -31,7 +34,7 @@ Plotly.d3.csv('./data/pph_trade2015.csv', function(err, rows){
               z: unpack(rows, 'Eksport PPH w PLN'),
               text: unpack(rows, 'country_pl'),
               autocolorscale: false,
-              reversescale: true
+              reversescale: false
           },
 
 // {
@@ -53,21 +56,21 @@ Plotly.d3.csv('./data/pph_trade2015.csv', function(err, rows){
         ];
 
   var layout = {
-    annotations: [
-    {
-      lon : [61.52401],
-      lat : [105.318756],
-      xref: 'lon',
-      yref: 'lat',
-      text: '184.6',
-      showarrow: false,
-      font: {
-        family: 'Courier New, monospace',
-        size: 16,
-        color: '#ffffff'
-      },
-      align: 'center'
-    }],
+    // annotations: [
+    // {
+    //   lon : [61.52401],
+    //   lat : [105.318756],
+    //   xref: 'lon',
+    //   yref: 'lat',
+    //   text: '184.6',
+    //   showarrow: false,
+    //   font: {
+    //     family: 'Courier New, monospace',
+    //     size: 16,
+    //     color: '#ffffff'
+    //   },
+    //   align: 'center'
+    // }],
      width: 1100,
         height: 600,
           title: '',
@@ -78,8 +81,8 @@ Plotly.d3.csv('./data/pph_trade2015.csv', function(err, rows){
               type: 'mercator',
                               scale: 1
             },
-    lonaxis: { range: [-15, 200] },
-    lataxis: { range: [35, 85] },
+    lonaxis: { range: [-20, 190] },
+    lataxis: { range: [30, 83] },
   },
   margin: {
            l: 0,

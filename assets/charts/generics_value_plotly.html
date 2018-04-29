@@ -3,6 +3,8 @@
 
   <head>
    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+   <title>Generics value</title>
+
 	</head>
 
   <body>
@@ -11,39 +13,41 @@
 
 <script>
 
-Plotly.d3.csv('./data/pph_trade2015.csv', function(err, rows){
+Plotly.d3.csv('./data/generics_value.csv', function(err, rows){
       function unpack(rows, key) {
           return rows.map(function(row) { return row[key]; });
       }
   // console.log(unpack(rows, 'postal'));
  var data = [{
     colorscale: [
-            [0, 'rgb(1, 26, 54)'],
-            // [0.35, 'rgb(40, 60, 190)'],
-            [0.5, 'rgb(70, 100, 245)'],
+            [0, '#f6f5fa'],
+            // [0.2, 'rgb(157,202,254)'],
+            [0.5, 'rgb(98,170,253)'],
+            // [0.7, 'rgb(109,176,253)'],
+
             // [0.6, 'rgb(90, 120, 245)'],
             // [0.7, 'rgb(106, 137, 247)'],
-            [1, 'rgb(231, 234, 236)']
+            [1, '#024594']
         ],
               type: 'choropleth',
               locationmode: 'country codes',
               locations: unpack(rows, 'iso3'),
-              z: unpack(rows, 'Eksport PPH w PLN'),
+              z: unpack(rows, 'volume'),
               text: unpack(rows, 'country_pl'),
               autocolorscale: false,
-              reversescale: true
+              reversescale: false
           }];
 
   var layout = {
-     width: 1500,
-        height: 1500,
+     width: 1100,
+        height: 600,
           title: '',
 
           geo: {
             scope: 'europe',
             showframe: false,
             projection: {
-            type: 'mercator',
+            type: 'kavrayskiy7',
             scale: 1
             },
 

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+   <title>Generics volume</title>
+
+	</head>
+
+  <body>
+
+      <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+
+<script>
+
+Plotly.d3.csv('./data/generics_volume.csv', function(err, rows){
+      function unpack(rows, key) {
+          return rows.map(function(row) { return row[key]; });
+      }
+  // console.log(unpack(rows, 'postal'));
+ var data = [{
+    colorscale: [
+            [0, '#f6f5fa'],
+            // [0.2, 'rgb(157,202,254)'],
+            [0.5, 'rgb(98,170,253)'],
+            // [0.7, 'rgb(109,176,253)'],
+
+            // [0.6, 'rgb(90, 120, 245)'],
+            // [0.7, 'rgb(106, 137, 247)'],
+            [1, '#024594']
+        ],
+              type: 'choropleth',
+              locationmode: 'country codes',
+              locations: unpack(rows, 'iso3'),
+              z: unpack(rows, 'volume'),
+              text: unpack(rows, 'country_pl'),
+              autocolorscale: false,
+              reversescale: false
+          }];
+
+  var layout = {
+     width: 1100,
+        height: 600,
+          title: '',
+
+          geo: {
+            scope: 'europe',
+            showframe: false,
+            projection: {
+            type: 'kavrayskiy7',
+            scale: 1
+            },
+
+  },
+
+  margin: {
+           l: 0,
+           r: 0,
+           b: 0,
+           t: 10,
+           pad: 2
+       }
+      };
+
+      Plotly.plot(myDiv, data, layout, {showLink: false}, {
+  modeBarButtonsToAdd: [{
+    name: 'toImage2',
+    icon: Plotly.Icons.camera,
+    click: function(gd) {
+      Plotly.downloadImage(gd, {format: 'svg'})
+    }
+  }]
+});
+  });
+
+</script>
+
+  </body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+	<head>
+
+		<!-- DO NOT DO THIS IN PRODUCTION -->
+		<!-- github.io and json-stat.org ARE NOT CDNs -->
+		<link href="https://idescat.github.io/visual/visual.css" rel="stylesheet" type="text/css" />
+		<script src="https://json-stat.org/lib/json-stat.js"></script>
+		<script src="../js/lasyvisual.js"></script>
+		<!-- /DO NOT DO THIS IN PRODUCTION -->
+	</head>
+
+
+<body>
+		<div id="visual" class="visual"></div>
+		<script>
+			visual(
+				{
+					lang: "en", //Default language is Catalan ("ca"). Set in visual.setup.js
+					// title: "CMAP example",
+					// geo: "European Union (28)",
+					// time: "2003",
+					unit: {symbol: "%"},
+					legend: true,
+					dec: 1, //Number of decimal positions of the data.
+					by: "eu28", //Required if type: "cmap". Area unit of the data and map.
+					type: "cmap",
+					data: [{id: 'AT', val: 18}, {id: 'BE', val: 13}, {id: 'CZ', val: 30}, {id: 'DE', val: 20}, {id: 'DK', val: 14}, {id: 'EL', val: 19}, {id: 'ES', val: 18}, {id: 'FI', val: 19}, {id: 'FR', val: 22}, {id: 'HU', val: 27}, {id: 'IE', val: 22}, {id: 'IT', val: 16}, {id: 'LV', val: 45}, {id: 'NL', val: 22}, {id: 'PL', val: 41}, {id: 'PT', val: 30}, {id: 'SE', val: 13}, {id: 'SK', val: 23}, {id: 'UK', val: 27}]
+				}
+			);
+		</script>
+</body>
+
+</html>
