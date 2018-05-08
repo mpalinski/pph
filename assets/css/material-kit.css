@@ -11424,7 +11424,8 @@ fieldset[disabled] .form-check .form-check-input,
 .card.bg-danger,
 .card.card-rotate.bg-danger .front,
 .card.card-rotate.bg-danger .back {
-    background: linear-gradient(60deg, #94bde5, #b3b9c4);
+    /* background: linear-gradient(60deg, #94bde5, #b3b9c4); */
+    background: #b3b9c4;
 }
 
 .card .card-header-rose,
