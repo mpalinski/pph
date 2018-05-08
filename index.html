@@ -967,8 +967,8 @@ Produkcja leków biopodobnych, na którą stawia Polpharma, jest równie zaawans
 <h3>Patenty Polpharmy w rozbiciu na zastosowanie medyczne i obszary obowiązywania patentu</h3>
 </div>
 </div>
-        <div class="embed-responsive iframe-custom-charts">
-            <iframe class="embed-responsive-item" src="./assets/charts/patenty.html" allowfullscreen align="center"></iframe>
+        <div class="embed-responsive iframe-custom-charts-patenty">
+            <iframe class="embed-responsive-item" src="./assets/charts/patenty.html" allowfullscreen align="middle"></iframe>
         </div>
         <div id="nav-tabs2">
                   <div class="col-md-6">
@@ -1115,6 +1115,15 @@ title: {
                     </div>
                 </div>
       </div>
+
+    </br></br>
+                <p class='blockquote' text-align="justify">
+<b>41</b> leków równoważnych z portfolio Polpharmy to leki, które nie posiadają
+zamienników. Zaangażowanie firmy w ich produkcję można uznać za
+przejaw swoistej odpowiedzialności społecznej – są to w większości leki
+niskomarżowe (firma czerpie z nich relatywnie mniejszy zysk).</p></br></br>
+
+
       <p>Możliwości upowszechnienia terapii i obniżenia
 jej kosztów, jakie realnie otwiera produkcja generyczna,
 zostały dostrzeżone i docenione także w krajach wysokorozwiniętych.
@@ -1435,89 +1444,75 @@ będą stanowiły właśnie leki generyczne. </p>
           </div>
 
           <div class="container">
-              <div class="section text-center">
-                  <div class="row">
-                    <h3>Wydatki Polpharmy na szkolenia (mln zł)</h3>
-          </div>
-          </div>
-          <canvas id="line-chart2" width="w50" height="h25"></canvas>
+            <p align="justify"> Polpharma jest nie tylko największym producentem
+leków w Polsce, ale należy też do największych
+pracodawców sektora.
+Stabilny poziom zatrudnienia i lepsze jakościowo
+miejsca pracy to cele Strategii na Rzecz Odpowiedzialnego
+Rozwoju. Miejsca pracy wymagające lepszych
+kwalifikacji, w przedsiębiorstwach o większym potencjale
+innowacyjności i konkurencyjności to szczególny
+zasób, przekładający się na zarobki także w innych,
+mniej zaawansowanych technologicznie branżach.
+Najlepiej płatne zawody „ciągną” za sobą także te relatywnie
+gorzej opłacane, przyczyniając się tym samym
+do poprawy ogólnej sytuacji społecznej i jakości życia.</p>
 
-          <script>
 
-
-          new Chart(document.getElementById("line-chart2"), {
-            type: 'line',
-            data: {
-              labels: [2012,2013,2014,2015,2016],
-              datasets: [{
-                  data: [1.468574,	2.553805,	4.249983,	4.892881,	4.480879],
-                  label: "Wydatki na szkolenia w mln zł",
-                  backgroundColor: 'rgba(2, 69, 148,.7)',
-                  borderColor: "#024594",
-                  fill: "origin"
-                }
-              ]
-            },
-          	options: {
-          		legend: {
-          				display: false
-          			},
-          		 "deferred": { "xOffset": "100%", "delay": 500 },
-          			animation: {
-          				easing: 'linear'
-          			},
-          		title: {
-          			display: false,
-          			text: 'Wydatki na szkolenia w grupie Polpharma w mln zł'
-          		}
-          	}
-          });
-
-          </script>
-
-          <div id="nav-tabs2">
-                    <div class="col-md-6">
-
-                        <div class="card card-nav-tabs">
-                            <div class="card-header card-header-default">
-                                <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
-                                <div class="nav-tabs-navigation">
-                                    <div class="nav-tabs-wrapper">
-                                        <ul class="nav nav-tabs" data-tabs="tabs">
-                                            <li class="nav-item">
-                                                <a class="nav-link active" href="#info8" data-toggle="tab">
-                                                    <i class="material-icons">info_outline</i> Informacje
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#zrodlo8" data-toggle="tab">
-                                                    <i class="material-icons">input</i> Źródło
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body ">
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="info8">
-                                        <h5>&#9758; Dane dotyczą zarówno szkoleń wewnętrznych jak i zewnętrznych.</br></br>
-                                           <!-- &#9758;  -->
-                                         </h5>
-                                    </div>
-                                    <div class="tab-pane" id="zrodlo8">
-                                    <h5>
-                                        &#9758; Dane wewnętrzne Polpharma.
-                                      </h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-          </div>
-
+<div class="embed-responsive iframe-custom-charts">
+    <iframe class="embed-responsive-item" src="./assets/charts/zatrudnienie.html" allowfullscreen></iframe>
 </div>
 
+<div id="nav-tabs2">
+          <div class="col-md-6">
+
+              <div class="card card-nav-tabs">
+                  <div class="card-header card-header-default">
+                      <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                      <div class="nav-tabs-navigation">
+                          <div class="nav-tabs-wrapper">
+                              <ul class="nav nav-tabs" data-tabs="tabs">
+                                  <!-- <li class="nav-item">
+                                      <a class="nav-link active" href="#info8" data-toggle="tab">
+                                          <i class="material-icons">info_outline</i> Informacje
+                                      </a>
+                                  </li> -->
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="#zrodlo_zat" data-toggle="tab">
+                                          <i class="material-icons">input</i> Źródło
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card-body ">
+                      <div class="tab-content">
+
+                          <div class="tab-pane active" id="zrodlo_zat">
+                          <h5>
+                              &#9758; Dane wewnętrzne Polpharma.
+                            </h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+</div>
+
+<p align="justify">Dla rozwoju polskiej gospodarki
+kluczowe jest tworzenie popytu na miejsca pracy wymagające
+wysokich kwalifikacji, podobnie jak lepsze
+wykorzystanie kapitału ludzkiego.
+Wynagrodzenie oferowane przez Polpharmę jest
+średnio o 12% wyższe niż płaca w sektorze (w latach
+2013-2016). Polpharma zatrudnia też relatywnie więcej
+pracowników odpowiedzialnych za badania i rozwój, a
+ich płace są jeszcze wyższe (w 2015 r. średnie wynagrodzenie
+pracowników tej grupy było o ponad 50% wyższe
+niż przeciętna płaca w sektorze).
+Co roku zatrudnienie w Polpharmie znajduje
+średnio 400 osób (dane dla lat 2015-2016). </p>
 
 <div class="container">
     <div class="section text-center">
@@ -1630,6 +1625,93 @@ new Chart(document.getElementById("bar-chart-grouped2"), {
 </div>
 
 </div>
+
+
+              <div class="section text-center">
+                  <div class="row">
+                    <h3>Wydatki Polpharmy na szkolenia (mln zł)</h3>
+          </div>
+          </div>
+          <canvas id="line-chart2" width="w50" height="h25"></canvas>
+
+          <script>
+
+
+          new Chart(document.getElementById("line-chart2"), {
+            type: 'line',
+            data: {
+              labels: [2012,2013,2014,2015,2016],
+              datasets: [{
+                  data: [1.468574,	2.553805,	4.249983,	4.892881,	4.480879],
+                  label: "Wydatki na szkolenia w mln zł",
+                  backgroundColor: 'rgba(2, 69, 148,.7)',
+                  borderColor: "#024594",
+                  fill: "origin"
+                }
+              ]
+            },
+          	options: {
+          		legend: {
+          				display: false
+          			},
+          		 "deferred": { "xOffset": "100%", "delay": 500 },
+          			animation: {
+          				easing: 'linear'
+          			},
+          		title: {
+          			display: false,
+          			text: 'Wydatki na szkolenia w grupie Polpharma w mln zł'
+          		}
+          	}
+          });
+
+          </script>
+
+          <div id="nav-tabs2">
+                    <div class="col-md-6">
+
+                        <div class="card card-nav-tabs">
+                            <div class="card-header card-header-default">
+                                <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                                <div class="nav-tabs-navigation">
+                                    <div class="nav-tabs-wrapper">
+                                        <ul class="nav nav-tabs" data-tabs="tabs">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="#info8" data-toggle="tab">
+                                                    <i class="material-icons">info_outline</i> Informacje
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#zrodlo8" data-toggle="tab">
+                                                    <i class="material-icons">input</i> Źródło
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body ">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="info8">
+                                        <h5>&#9758; Dane dotyczą zarówno szkoleń wewnętrznych jak i zewnętrznych.</br></br>
+                                           <!-- &#9758;  -->
+                                         </h5>
+                                    </div>
+                                    <div class="tab-pane" id="zrodlo8">
+                                    <h5>
+                                        &#9758; Dane wewnętrzne Polpharma.
+                                      </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+          </div>
+
+</div>
+
+
+
 
 
           <div class="container">

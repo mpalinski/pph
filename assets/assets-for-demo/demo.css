@@ -10,9 +10,6 @@
   min-height: 1250px;
 }
 
-.iframe-custom-charts {
-  min-height: 900px;
-}
 
 .tim-white-buttons {
     background-color: #777777;
@@ -775,7 +772,13 @@ a { text-decoration: none; }
 }
 
 .iframe-custom-charts {
-  /* min-height: 900px; */
+  min-height: 550px;
+  align: center;
+  text-align: center;
+}
+
+.iframe-custom-charts-patenty {
+  min-height: 900px;
   align: center;
   text-align: center;
 }
