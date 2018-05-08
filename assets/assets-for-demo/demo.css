@@ -390,7 +390,9 @@
     border-radius: 0;
 }
 .section-tabs{
-    background: #f6f5fa;
+    /* background: #f6f5fa; */
+    background: #fff;
+
 }
 .section-pagination{
     padding-bottom: 0;

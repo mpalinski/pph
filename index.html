@@ -847,13 +847,290 @@ Produkcja leków biopodobnych, na którą stawia Polpharma, jest równie zaawans
                                   </div>
                                 </div>
 
-                                <div class="container">
-                                    <div class="section text-center">
-                                        <div class="row">
-                                          <h3> Udział leków generycznych w całości rynku w krajach członkowskich UE (% wolumenu sprzedaży w 2014 r.) </h3>
-                                          <div class="embed-responsive iframe-custom-charts">
-                                              <iframe class="embed-responsive-item" src="./assets/charts/generics_map.html" allowfullscreen></iframe>
-                                          </div>
+
+
+
+
+<div class="container">
+    <div class="section text-center">
+        <div class="row">
+          <h3>Działalność patentowa Polpharmy</h3>
+          <p align="justify"></br>
+          Grupa Polpharma stale rozwija swoje portfolio leków generycznych. Szczególnie istotne są tutaj ulepszenia znanych już substancji, które w ostatnich dwóch dekadach uzyskało potwierdzenie w X patentach (<i>TBD</i>).
+</p>
+          <h3>Aktywne patenty Grupy Polpharma na substancje czynne w latach 1999-2016</h3>
+</div>
+</div>
+          <div class="chart-container" style="position: relative; height:60vh; width:60vw">
+
+          <canvas id="line-chart1"></canvas>
+</div>
+          <script>
+
+
+          Chart.defaults.global.animation.duration = 1000;
+          Chart.defaults.global.defaultFontSize = 15;
+          Chart.defaults.global.legend.position = 'bottom';
+          Chart.defaults.global.elements.line.tension = 0
+
+          new Chart(document.getElementById("line-chart1"), {
+            type: 'line',
+            data: {
+              labels: [1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016
+              ],
+              datasets: [{
+                  data: [1,1,3,3,3,4,4,5,6,8,9,9,11,12,13,14,14,14],
+                  label: "Patenty przyznane Polpharmie",
+                  backgroundColor: 'rgba(2, 69, 148,.7)',
+                  borderColor: "rgb(2, 69, 148)",
+                  borderDash: [5, 5],
+                  steppedLine: true,
+                  pointBorderColor: '#3c9fab',
+                  pointBackgroundColor: '#3c9fab',
+                  pointStyle: 'circle',
+                  pointRadius: 10,
+          				pointHoverRadius: 15,
+                  fill: "origin"
+                }
+              ]
+            },
+            options: {
+                                  scales: {
+              yAxes: [{
+       ticks: {
+           min: 0,
+           max: 16
+         }
+   }]},
+              legend: {
+                  display: false
+                },
+                animation: {
+                  easing: 'linear'
+                },
+              title: {
+                display: false,
+                text: 'Przyznane patenty'
+              }
+            }
+          });
+
+          </script>
+
+          <div id="nav-tabs2">
+                    <div class="col-md-6">
+
+                        <div class="card card-nav-tabs">
+                            <div class="card-header card-header-default">
+                                <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                                <div class="nav-tabs-navigation">
+                                    <div class="nav-tabs-wrapper">
+                                        <ul class="nav nav-tabs" data-tabs="tabs">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="#info2" data-toggle="tab">
+                                                    <i class="material-icons">info_outline</i> Informacje
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#zrodlo2" data-toggle="tab">
+                                                    <i class="material-icons">input</i> Źródło
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body ">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="info2">
+                                        <h5>&#9758; Każda jurysdykcja patentowa liczona jako osobny patent.</br></br>
+                                           <!-- &#9758;  -->
+                                         </h5>
+                                    </div>
+                                    <div class="tab-pane" id="zrodlo2">
+                                    <h5>
+                                        &#9758; Dane wewnętrzne GK Polpharma.
+                                      </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+          </div>
+
+        </div>
+
+
+        <div class="container">
+            <div class="section text-center">
+                <div class="row">
+<h3>Patenty Polpharmy w rozbiciu na zastosowanie medyczne i obszary obowiązywania patentu</h3>
+</div>
+</div>
+        <div class="embed-responsive iframe-custom-charts">
+            <iframe class="embed-responsive-item" src="./assets/charts/patenty.html" allowfullscreen align="center"></iframe>
+        </div>
+        <div id="nav-tabs2">
+                  <div class="col-md-6">
+
+                      <div class="card card-nav-tabs">
+                          <div class="card-header card-header-default">
+                              <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                              <div class="nav-tabs-navigation">
+                                  <div class="nav-tabs-wrapper">
+                                      <ul class="nav nav-tabs" data-tabs="tabs">
+                                          <li class="nav-item">
+                                              <a class="nav-link active" href="#info2" data-toggle="tab">
+                                                  <i class="material-icons">info_outline</i> Informacje
+                                              </a>
+                                          </li>
+                                          <li class="nav-item">
+                                              <a class="nav-link" href="#zrodlo6" data-toggle="tab">
+                                                  <i class="material-icons">input</i> Źródło
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card-body ">
+                              <div class="tab-content">
+                                  <div class="tab-pane active" id="info6">
+                                      <h5>&#9758; Kliknij w wybrany obszar, żeby poznać kraje obowiązywania poszczególnych patentów.</br></br>
+                                         <!-- &#9758;  -->
+                                       </h5>
+                                  </div>
+                                  <div class="tab-pane" id="zrodlo6">
+                                  <h5>
+                                      &#9758; Dane wewnętrzne GK Polpharma.
+                                    </h5>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+        </div>
+      </div>
+
+
+<div class="section section-tabs" id='industry4'>
+    <div class="container">
+
+        <div class="section text-center">
+          <div class="icon icon-info">
+              <!-- <img src='./assets/img/ind.png'> -->
+              <img src='./assets/icons/leki.png'>
+            </div>
+            <h1 class='title'>Bezpieczeństwo lekowe<hr></h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+          </br></br>
+                      <p class='blockquote' text-align="justify">
+            W kontekście nadchodzących zmian demograficznych związanych ze starzeniem się społeczeństwa coraz większego znaczenia nabiera bezpieczeństwo lekowe kraju, które polega na zapewnieniu dostępu do niedrogich i dobrej jakości leków na powszechnie występujące choroby jak najszerszym grupom społecznym.
+</p></br></br>
+</div>
+
+<div class="container">
+    <!-- <div class="section text-center"> -->
+        <div class="row">
+        </br></br>
+          <p>Coraz większa część społeczeństwa będzie doświadczała
+chorób przewlekłych związanych ze starzeniem
+się organizmu, takich jak nadciśnienie, choroby
+układu krążenia, choroby narządu wzroku i ruchu. Kluczową
+rolę w zapewnianiu bezpieczeństwa lekowego
+odgrywają leki generyczne (równoważne). Nie sposób umniejszać znaczenia produkcji leków oryginalnych,
+opartych o nowo pozyskane molekuły, jednak obecnie
+niemała jej część dotyczy chorób występujących
+stosunkowo rzadko. Z perspektywy bezpieczeństwa lekowego kraju, nieporównywalnie ważniejsze
+jest wspieranie dostępu do tanich i skutecznych leków na nadciśnienie,
+dotykające co czwartego Polaka, niż stymulowanie inwestycji w
+prace nad nowymi sposobami leczenia chorób rzadko występujących.</p>
+          <h3>Grupy terapeutyczne, w których Polpharma jest liderem sprzedaży (%)</h3>
+<!-- </div> -->
+</div>
+          <canvas id="polar-chart" width="800" height="450"></canvas>
+
+<script>
+new Chart(document.getElementById("polar-chart"), {
+type: 'polarArea',
+data: {
+labels: ["R0 RESPIRATORY SYSTEM","N0 NERVOUS SYSTEM","A0 ALIMENTARY T.& METABOLISM","J0 SYSTEMIC ANTI-INFECTIVES","C0 CARDIOVASCULAR SYSTEM","S0 SENSORY ORGANS"],
+datasets: [
+  {
+    label: "",
+    backgroundColor: ["rgba(222, 233, 252,.5)", "rgb(99, 149, 242)","rgb(18, 88, 220)","rgb(10, 51, 127)","rgb(9, 24, 52)","rgba(11, 30, 65,.5)"],
+    data: ['10.2','10.3','14','14.6','16.8','31.8']
+  }
+]
+},
+options: {
+title: {
+  display: false,
+  text: 'Grupy terapeutyczne, w których Polpharma jest liderem sprzedaży'
+}
+}
+});
+</script>
+      <div id="nav-tabs2">
+                <div class="col-md-6">
+
+                    <div class="card card-nav-tabs">
+                        <div class="card-header card-header-default">
+                            <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                            <div class="nav-tabs-navigation">
+                                <div class="nav-tabs-wrapper">
+                                    <ul class="nav nav-tabs" data-tabs="tabs">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#info7" data-toggle="tab">
+                                                <i class="material-icons">info_outline</i> Informacje
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#zrodlo7" data-toggle="tab">
+                                                <i class="material-icons">input</i> Źródło
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body ">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="info7">
+                                    <h5>&#9758; Dane dotyczą grup terapeutycznych, w których Polpharma jest liderem sprzedaży ilościowej (dane dla 2017 r. dla kanału pharma).</br></br>
+                                       <!-- &#9758;  -->
+                                     </h5>
+                                </div>
+                                <div class="tab-pane" id="zrodlo7">
+                                <h5>
+                                    &#9758; Dane IQVIA.
+                                  </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+      </div>
+      <p>Możliwości upowszechnienia terapii i obniżenia
+jej kosztów, jakie realnie otwiera produkcja generyczna,
+zostały dostrzeżone i docenione także w krajach wysokorozwiniętych.
+Najlepszym dowodem są tutaj polityki
+lekowe takich krajów jak Niemcy, czy Francja, gdzie
+aktywnie dąży się do zwiększenia udziału zamienników
+w rynku– w 2022 r. 80% wolumenu produkcji leków
+będą stanowiły właśnie leki generyczne. </p>
+
+<div class="container">
+    <div class="section text-center">
+        <div class="row">
+          <h3> Udział leków generycznych w całości rynku w krajach członkowskich UE (% wolumenu sprzedaży w 2014 r.) </h3>
+          <div class="embed-responsive iframe-custom-charts">
+              <iframe class="embed-responsive-item" src="./assets/charts/generics_map.html" allowfullscreen></iframe>
+          </div>
 
 </div>
 </div>
@@ -1140,263 +1417,7 @@ Produkcja leków biopodobnych, na którą stawia Polpharma, jest równie zaawans
                     </div>
 
 
-<div class="container">
-    <div class="section text-center">
-        <div class="row">
-          <h3>Działalność patentowa Polpharmy</h3>
-          <p align="justify"></br>
-          Grupa Polpharma stale rozwija swoje portfolio leków generycznych. Szczególnie istotne są tutaj ulepszenia znanych już substancji, które w ostatnich dwóch dekadach uzyskało potwierdzenie w X patentach (<i>TBD</i>).
-</p>
-          <h3>Aktywne patenty Grupy Polpharma na substancje czynne w latach 1999-2016</h3>
-</div>
-</div>
-          <div class="chart-container" style="position: relative; height:60vh; width:60vw">
-
-          <canvas id="line-chart1"></canvas>
-</div>
-          <script>
-
-
-          Chart.defaults.global.animation.duration = 1000;
-          Chart.defaults.global.defaultFontSize = 15;
-          Chart.defaults.global.legend.position = 'bottom';
-          Chart.defaults.global.elements.line.tension = 0
-
-          new Chart(document.getElementById("line-chart1"), {
-            type: 'line',
-            data: {
-              labels: [1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016
-              ],
-              datasets: [{
-                  data: [1,1,3,3,3,4,4,5,6,8,9,9,11,12,13,14,14,14],
-                  label: "Patenty przyznane Polpharmie",
-                  backgroundColor: 'rgba(2, 69, 148,.7)',
-                  borderColor: "rgb(2, 69, 148)",
-                  borderDash: [5, 5],
-                  steppedLine: true,
-                  pointBorderColor: '#3c9fab',
-                  pointBackgroundColor: '#3c9fab',
-                  pointStyle: 'circle',
-                  pointRadius: 10,
-          				pointHoverRadius: 15,
-                  fill: "origin"
-                }
-              ]
-            },
-            options: {
-                                  scales: {
-              yAxes: [{
-       ticks: {
-           min: 0,
-           max: 16
-         }
-   }]},
-              legend: {
-                  display: false
-                },
-                animation: {
-                  easing: 'linear'
-                },
-              title: {
-                display: false,
-                text: 'Przyznane patenty'
-              }
-            }
-          });
-
-          </script>
-
-          <div id="nav-tabs2">
-                    <div class="col-md-6">
-
-                        <div class="card card-nav-tabs">
-                            <div class="card-header card-header-default">
-                                <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
-                                <div class="nav-tabs-navigation">
-                                    <div class="nav-tabs-wrapper">
-                                        <ul class="nav nav-tabs" data-tabs="tabs">
-                                            <li class="nav-item">
-                                                <a class="nav-link active" href="#info2" data-toggle="tab">
-                                                    <i class="material-icons">info_outline</i> Informacje
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#zrodlo2" data-toggle="tab">
-                                                    <i class="material-icons">input</i> Źródło
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body ">
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="info2">
-                                        <h5>&#9758; Każda jurysdykcja patentowa liczona jako osobny patent.</br></br>
-                                           <!-- &#9758;  -->
-                                         </h5>
-                                    </div>
-                                    <div class="tab-pane" id="zrodlo2">
-                                    <h5>
-                                        &#9758; Dane wewnętrzne GK Polpharma.
-                                      </h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-          </div>
-
-        </div>
-
-
-        <div class="container">
-            <div class="section text-center">
-                <div class="row">
-<h3>Patenty Polpharmy w rozbiciu na zastosowanie medyczne i obszary obowiązywania patentu</h3>
-</div>
-</div>
-        <div class="embed-responsive iframe-custom-charts">
-            <iframe class="embed-responsive-item" src="./assets/charts/patenty.html" allowfullscreen align="center"></iframe>
-        </div>
-        <div id="nav-tabs2">
-                  <div class="col-md-6">
-
-                      <div class="card card-nav-tabs">
-                          <div class="card-header card-header-default">
-                              <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
-                              <div class="nav-tabs-navigation">
-                                  <div class="nav-tabs-wrapper">
-                                      <ul class="nav nav-tabs" data-tabs="tabs">
-                                          <li class="nav-item">
-                                              <a class="nav-link active" href="#info2" data-toggle="tab">
-                                                  <i class="material-icons">info_outline</i> Informacje
-                                              </a>
-                                          </li>
-                                          <li class="nav-item">
-                                              <a class="nav-link" href="#zrodlo6" data-toggle="tab">
-                                                  <i class="material-icons">input</i> Źródło
-                                              </a>
-                                          </li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="card-body ">
-                              <div class="tab-content">
-                                  <div class="tab-pane active" id="info6">
-                                      <h5>&#9758; Kliknij w wybrany obszar, żeby poznać kraje obowiązywania poszczególnych patentów.</br></br>
-                                         <!-- &#9758;  -->
-                                       </h5>
-                                  </div>
-                                  <div class="tab-pane" id="zrodlo6">
-                                  <h5>
-                                      &#9758; Dane wewnętrzne GK Polpharma.
-                                    </h5>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-        </div>
-      </div>
-
-
-      <div class="container">
-          <div class="section text-center">
-              <div class="row">
-                <h3>Grupy terapeutyczne, w których Polpharma jest liderem sprzedaży (%)</h3>
-      </div>
-      </div>
-                <canvas id="polar-chart" width="800" height="450"></canvas>
-
-<script>
-new Chart(document.getElementById("polar-chart"), {
-    type: 'polarArea',
-    data: {
-      labels: ["R0 RESPIRATORY SYSTEM","N0 NERVOUS SYSTEM","A0 ALIMENTARY T.& METABOLISM","J0 SYSTEMIC ANTI-INFECTIVES","C0 CARDIOVASCULAR SYSTEM","S0 SENSORY ORGANS"],
-      datasets: [
-        {
-          label: "",
-          backgroundColor: ["rgba(222, 233, 252,.5)", "rgb(99, 149, 242)","rgb(18, 88, 220)","rgb(10, 51, 127)","rgb(9, 24, 52)","rgba(11, 30, 65,.5)"],
-          data: ['10.2','10.3','14','14.6','16.8','31.8']
-        }
-      ]
-    },
-    options: {
-      title: {
-        display: false,
-        text: 'Grupy terapeutyczne, w których Polpharma jest liderem sprzedaży'
-      }
-    }
-});
-</script>
-            <div id="nav-tabs2">
-                      <div class="col-md-6">
-
-                          <div class="card card-nav-tabs">
-                              <div class="card-header card-header-default">
-                                  <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
-                                  <div class="nav-tabs-navigation">
-                                      <div class="nav-tabs-wrapper">
-                                          <ul class="nav nav-tabs" data-tabs="tabs">
-                                              <li class="nav-item">
-                                                  <a class="nav-link active" href="#info7" data-toggle="tab">
-                                                      <i class="material-icons">info_outline</i> Informacje
-                                                  </a>
-                                              </li>
-                                              <li class="nav-item">
-                                                  <a class="nav-link" href="#zrodlo7" data-toggle="tab">
-                                                      <i class="material-icons">input</i> Źródło
-                                                  </a>
-                                              </li>
-                                          </ul>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="card-body ">
-                                  <div class="tab-content">
-                                      <div class="tab-pane active" id="info7">
-                                          <h5>&#9758; Dane dotyczą grup terapeutycznych, w których Polpharma jest liderem sprzedaży ilościowej (dane dla 2017 r. dla kanału pharma).</br></br>
-                                             <!-- &#9758;  -->
-                                           </h5>
-                                      </div>
-                                      <div class="tab-pane" id="zrodlo7">
-                                      <h5>
-                                          &#9758; Dane IQVIA.
-                                        </h5>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-            </div>
-          </div>
-
-
-<div class="section section-tabs" id='industry4'>
-    <div class="container">
-
-        <div class="section text-center">
-          <div class="icon icon-info">
-              <!-- <img src='./assets/img/ind.png'> -->
-              <img src='./assets/icons/leki.png'>
-            </div>
-            <h1 class='title'>Bezpieczeństwo lekowe<hr></h1>
-
-
-              </div>
-            </div>
-          </div>
-
-          <div class="container">
-              <div class="section text-center">
-                <div class="row">
-
-
-</div>
-</div>
-</div>
+    </div>
 
 <div class="section section-tabs" id='hc'>
     <div class="container">
