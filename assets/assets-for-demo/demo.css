@@ -782,3 +782,15 @@ a { text-decoration: none; }
   align: center;
   text-align: center;
 }
+
+.iframe-custom-charts-map {
+  min-height: 800px;
+  align: center;
+  text-align: center;
+}
+
+.iframe-custom-charts-map2 {
+  min-height: 650px;
+  align: center;
+  text-align: center;
+}

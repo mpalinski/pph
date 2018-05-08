@@ -54,14 +54,14 @@ Farmacja 4.0 - w kierunku innowacyjnej gospodarki
                                   <img src='./assets/icons/biotechno_small.png'> Mariaż z biotechnologią
                                  </div>
                             </a>
-                            <a href="#generics" class="dropdown-item">
-                              <div class="icon icon-info">
-                                  <img src='./assets/icons/kola_small.png'> Rozwój portfolio leków generycznych
-                                 </div>
-                            </a>
                             <a href="#industry4" class="dropdown-item">
                               <div class="icon icon-info">
                                   <img src='./assets/icons/leki_small.png'> Bezpieczeństwo lekowe
+                                 </div>
+                            </a>
+                            <a href="#generics" class="dropdown-item">
+                              <div class="icon icon-info">
+                                  <img src='./assets/icons/kola_small.png'> Rozwój portfolio leków generycznych
                                  </div>
                             </a>
                             <a href="#hc" class="dropdown-item">
@@ -110,7 +110,7 @@ Farmacja 4.0 - w kierunku innowacyjnej gospodarki
                     <h1><mark class="title-page"> Farmacja 4.0</mark></h1>
 
                     <h2><mark  class="title-page">W kierunku innowacyjnej gospodarki </mark></h2>
-                    <h4>work in progress//</br>version 1.3//</br></h4>
+                    <h4>// version: under review</br></h4>
                     <br>
 </div>
 <!-- <div class="arrow bounce">
@@ -188,20 +188,6 @@ Farmacja 4.0 - w kierunku innowacyjnej gospodarki
                         </div>
                         <div class="col-md-4">
                             <div class="info">
-                              <a href="#generics">
-
-                                <div class="icon icon-danger">
-                                  <!-- <img src='./assets/img/generic.png'> -->
-                                  <img src='./assets/icons/kolka.png'>
-
-                                    <!-- <i class="material-icons">fingerprint</i> -->
-                                </div>
-                                <h4 class="info-title">Rozwój portfolio leków generycznych</h4>
-                                <p>Wbrew powszechnej opinii leki generyczne mogą być produkowane w innowacyjny sposób, z wykorzystaniem nowatorskich technologii w nowoczesnych zakładach produkcyjnych.</p></a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="info">
                               <a href="#industry4">
 
                                 <div class="icon icon-danger">
@@ -214,7 +200,20 @@ Farmacja 4.0 - w kierunku innowacyjnej gospodarki
                                 <p>W kontekście nadchodzących zmian demograficznych związanych ze starzeniem się społeczeństwa coraz większego znaczenia nabiera bezpieczeństwo lekowe kraju.</p></a>
                             </div>
                         </div>
+                        <div class="col-md-4">
+                            <div class="info">
+                              <a href="#generics">
 
+                                <div class="icon icon-danger">
+                                  <!-- <img src='./assets/img/generic.png'> -->
+                                  <img src='./assets/icons/kolka.png'>
+
+                                    <!-- <i class="material-icons">fingerprint</i> -->
+                                </div>
+                                <h4 class="info-title">Rozwój portfolio leków generycznych</h4>
+                                <p>Wbrew powszechnej opinii leki generyczne mogą być produkowane w innowacyjny sposób, z wykorzystaniem nowatorskich technologii w nowoczesnych zakładach produkcyjnych.</p></a>
+                            </div>
+                        </div>
                         <div class="col-md-4">
                             <div class="info">
                               <a href="#hc">
@@ -827,192 +826,6 @@ Produkcja leków biopodobnych, na którą stawia Polpharma, jest równie zaawans
                             </div>
                           </div>
 
-    <!-- </div> -->
-                        <!-- </div>
-                      </div> -->
-
-
-                      <div class="section section-tabs" id='generics'>
-                          <div class="container">
-
-                              <div class="section text-center">
-                                <div class="icon icon-info">
-                                    <!-- <img src='./assets/img/generic.png'> -->
-                                    <img src='./assets/icons/leki.png'>
-                                  </div>
-                                  <h1 class='title'>Rozwój portfolio leków generycznych<hr></h1>
-
-
-                                    </div>
-                                  </div>
-                                </div>
-
-
-
-
-
-<div class="container">
-    <div class="section text-center">
-        <div class="row">
-          <h3>Działalność patentowa Polpharmy</h3>
-          <p align="justify"></br>
-          Grupa Polpharma stale rozwija swoje portfolio leków generycznych. Szczególnie istotne są tutaj ulepszenia znanych już substancji, które w ostatnich dwóch dekadach uzyskało potwierdzenie w X patentach (<i>TBD</i>).
-</p>
-          <h3>Aktywne patenty Grupy Polpharma na substancje czynne w latach 1999-2016</h3>
-</div>
-</div>
-          <div class="chart-container" style="position: relative; height:60vh; width:60vw">
-
-          <canvas id="line-chart1"></canvas>
-</div>
-          <script>
-
-
-          Chart.defaults.global.animation.duration = 1000;
-          Chart.defaults.global.defaultFontSize = 15;
-          Chart.defaults.global.legend.position = 'bottom';
-          Chart.defaults.global.elements.line.tension = 0
-
-          new Chart(document.getElementById("line-chart1"), {
-            type: 'line',
-            data: {
-              labels: [1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016
-              ],
-              datasets: [{
-                  data: [1,1,3,3,3,4,4,5,6,8,9,9,11,12,13,14,14,14],
-                  label: "Patenty przyznane Polpharmie",
-                  backgroundColor: 'rgba(2, 69, 148,.7)',
-                  borderColor: "rgb(2, 69, 148)",
-                  borderDash: [5, 5],
-                  steppedLine: true,
-                  pointBorderColor: '#3c9fab',
-                  pointBackgroundColor: '#3c9fab',
-                  pointStyle: 'circle',
-                  pointRadius: 10,
-          				pointHoverRadius: 15,
-                  fill: "origin"
-                }
-              ]
-            },
-            options: {
-                                  scales: {
-              yAxes: [{
-       ticks: {
-           min: 0,
-           max: 16
-         }
-   }]},
-              legend: {
-                  display: false
-                },
-                animation: {
-                  easing: 'linear'
-                },
-              title: {
-                display: false,
-                text: 'Przyznane patenty'
-              }
-            }
-          });
-
-          </script>
-
-          <div id="nav-tabs2">
-                    <div class="col-md-6">
-
-                        <div class="card card-nav-tabs">
-                            <div class="card-header card-header-default">
-                                <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
-                                <div class="nav-tabs-navigation">
-                                    <div class="nav-tabs-wrapper">
-                                        <ul class="nav nav-tabs" data-tabs="tabs">
-                                            <li class="nav-item">
-                                                <a class="nav-link active" href="#info2" data-toggle="tab">
-                                                    <i class="material-icons">info_outline</i> Informacje
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#zrodlo2" data-toggle="tab">
-                                                    <i class="material-icons">input</i> Źródło
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body ">
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="info2">
-                                        <h5>&#9758; Każda jurysdykcja patentowa liczona jako osobny patent.</br></br>
-                                           <!-- &#9758;  -->
-                                         </h5>
-                                    </div>
-                                    <div class="tab-pane" id="zrodlo2">
-                                    <h5>
-                                        &#9758; Dane wewnętrzne GK Polpharma.
-                                      </h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-          </div>
-
-        </div>
-
-
-        <div class="container">
-            <div class="section text-center">
-                <div class="row">
-<h3>Patenty Polpharmy w rozbiciu na zastosowanie medyczne i obszary obowiązywania patentu</h3>
-</div>
-</div>
-        <div class="embed-responsive iframe-custom-charts-patenty">
-            <iframe class="embed-responsive-item" src="./assets/charts/patenty.html" allowfullscreen align="middle"></iframe>
-        </div>
-        <div id="nav-tabs2">
-                  <div class="col-md-6">
-
-                      <div class="card card-nav-tabs">
-                          <div class="card-header card-header-default">
-                              <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
-                              <div class="nav-tabs-navigation">
-                                  <div class="nav-tabs-wrapper">
-                                      <ul class="nav nav-tabs" data-tabs="tabs">
-                                          <li class="nav-item">
-                                              <a class="nav-link active" href="#info2" data-toggle="tab">
-                                                  <i class="material-icons">info_outline</i> Informacje
-                                              </a>
-                                          </li>
-                                          <li class="nav-item">
-                                              <a class="nav-link" href="#zrodlo6" data-toggle="tab">
-                                                  <i class="material-icons">input</i> Źródło
-                                              </a>
-                                          </li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="card-body ">
-                              <div class="tab-content">
-                                  <div class="tab-pane active" id="info6">
-                                      <h5>&#9758; Kliknij w wybrany obszar, żeby poznać kraje obowiązywania poszczególnych patentów.</br></br>
-                                         <!-- &#9758;  -->
-                                       </h5>
-                                  </div>
-                                  <div class="tab-pane" id="zrodlo6">
-                                  <h5>
-                                      &#9758; Dane wewnętrzne GK Polpharma.
-                                    </h5>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-        </div>
-      </div>
-
-
 <div class="section section-tabs" id='industry4'>
     <div class="container">
 
@@ -1037,7 +850,7 @@ Produkcja leków biopodobnych, na którą stawia Polpharma, jest równie zaawans
     <!-- <div class="section text-center"> -->
         <div class="row">
         </br></br>
-          <p>Coraz większa część społeczeństwa będzie doświadczała
+          <p align="justify">Coraz większa część społeczeństwa będzie doświadczała
 chorób przewlekłych związanych ze starzeniem
 się organizmu, takich jak nadciśnienie, choroby
 układu krążenia, choroby narządu wzroku i ruchu. Kluczową
@@ -1137,7 +950,7 @@ będą stanowiły właśnie leki generyczne. </p>
     <div class="section text-center">
         <div class="row">
           <h3> Udział leków generycznych w całości rynku w krajach członkowskich UE (% wolumenu sprzedaży w 2014 r.) </h3>
-          <div class="embed-responsive iframe-custom-charts">
+          <div class="embed-responsive iframe-custom-charts-map">
               <iframe class="embed-responsive-item" src="./assets/charts/generics_map.html" allowfullscreen></iframe>
           </div>
 
@@ -1428,6 +1241,220 @@ będą stanowiły właśnie leki generyczne. </p>
 
     </div>
 
+    <div class="section section-tabs" id='generics'>
+        <div class="container">
+
+            <div class="section text-center">
+              <div class="icon icon-info">
+                  <!-- <img src='./assets/img/generic.png'> -->
+                  <img src='./assets/icons/leki.png'>
+                </div>
+                <h1 class='title'>Rozwój portfolio leków generycznych<hr></h1>
+
+
+                  </div>
+                </div>
+              </div>
+
+<div class="container">
+  <p class='blockquote' text-align="justify">
+Polpharma nie jest innowatorem sporadycznym. Sukcesywnie rosnące
+nakłady na badania i rozwój (w latach 2012-2015 stanowiły ponad 50% wydatków
+całego sektora farmaceutycznego w Polsce na ten cel) przekładają
+się systematycznie na nowe zgłoszenia patentowe.</p></br></br>
+
+<p align="justify">
+Polpharma stale rozwija portfolio
+leków generycznych. Na przestrzeni ostatnich lat firma dokonała
+licznych innowacji produktowych potwierdzonych
+patentami, polegających na nowatorskich metodach
+syntezy, nowych sposobach aplikacji leku i bardziej
+ekologicznych sposobach produkcji. Polpharma
+wypracowała np. nowe połączenie substancji aktywnych
+pozwalające na zwiększenie efektywności
+terapii w postaci Metafenu (połączenie ibuprofenu i
+paracetamolu, rozwinięte w Polfie Łódź). Co istotne,
+Polpharma pracuje nad takimi lekami równoważnymi,
+które odpowiadają na potrzeby starzejącego się
+społeczeństwa.
+Warto odnotować, że jednym z pośrednich celów
+SOR jest motywowanie polskich firm do podejmowania
+ryzyka inwestycji w innowacyjność: podejmowania
+współpracy z innymi podmiotami, zwiększania
+nakładów na badania i rozwój oraz uczestnictwa w
+grantach badawczych. Dla wszystkich powyższych
+aktywności Polpharma może posłużyć jako inspirujący
+przykład, a także lider innowacyjności w sektorze
+produkcji biotechnologicznej i chemicznej.
+</p>
+</div>
+
+
+
+  <div class="container">
+  <div class="section text-center">
+  <div class="row">
+  <!-- <h3>Działalność patentowa Polpharmy</h3> -->
+  <!-- <p align="justify"></br> -->
+  <!-- Grupa Polpharma stale rozwija swoje portfolio leków generycznych. Szczególnie istotne są tutaj ulepszenia znanych już substancji, które w ostatnich dwóch dekadach uzyskało potwierdzenie w X patentach (<i>TBD</i>). -->
+  <!-- </p> -->
+  <h3>Aktywne patenty Grupy Polpharma na substancje czynne w latach 1999-2016</h3>
+  </div>
+  </div>
+  <div class="chart-container" style="position: relative; height:60vh; width:60vw">
+
+  <canvas id="line-chart1"></canvas>
+  </div>
+  <script>
+
+
+  Chart.defaults.global.animation.duration = 1000;
+  Chart.defaults.global.defaultFontSize = 15;
+  Chart.defaults.global.legend.position = 'bottom';
+  Chart.defaults.global.elements.line.tension = 0
+
+  new Chart(document.getElementById("line-chart1"), {
+  type: 'line',
+  data: {
+  labels: [1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016
+  ],
+  datasets: [{
+  data: [1,1,3,3,3,4,4,5,6,8,9,9,11,12,13,14,14,14],
+  label: "Patenty przyznane Polpharmie",
+  backgroundColor: 'rgba(2, 69, 148,.7)',
+  borderColor: "rgb(2, 69, 148)",
+  borderDash: [5, 5],
+  steppedLine: true,
+  pointBorderColor: '#3c9fab',
+  pointBackgroundColor: '#3c9fab',
+  pointStyle: 'circle',
+  pointRadius: 10,
+  pointHoverRadius: 15,
+  fill: "origin"
+  }
+  ]
+  },
+  options: {
+                scales: {
+  yAxes: [{
+  ticks: {
+  min: 0,
+  max: 16
+  }
+  }]},
+  legend: {
+  display: false
+  },
+  animation: {
+  easing: 'linear'
+  },
+  title: {
+  display: false,
+  text: 'Przyznane patenty'
+  }
+  }
+  });
+
+  </script>
+
+  <div id="nav-tabs2">
+  <div class="col-md-6">
+
+      <div class="card card-nav-tabs">
+          <div class="card-header card-header-default">
+              <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+              <div class="nav-tabs-navigation">
+                  <div class="nav-tabs-wrapper">
+                      <ul class="nav nav-tabs" data-tabs="tabs">
+                          <li class="nav-item">
+                              <a class="nav-link active" href="#info2" data-toggle="tab">
+                                  <i class="material-icons">info_outline</i> Informacje
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#zrodlo2" data-toggle="tab">
+                                  <i class="material-icons">input</i> Źródło
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="card-body ">
+              <div class="tab-content">
+                  <div class="tab-pane active" id="info2">
+                      <h5>&#9758; Każda jurysdykcja patentowa liczona jako osobny patent.</br></br>
+                         <!-- &#9758;  -->
+                       </h5>
+                  </div>
+                  <div class="tab-pane" id="zrodlo2">
+                  <h5>
+                      &#9758; Dane wewnętrzne GK Polpharma.
+                    </h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+
+  </div>
+
+
+  <div class="container">
+  <div class="section text-center">
+  <div class="row">
+  <h3>Patenty Polpharmy w rozbiciu na zastosowanie medyczne i obszary obowiązywania patentu</h3>
+  </div>
+  </div>
+  <div class="embed-responsive iframe-custom-charts-patenty">
+  <iframe class="embed-responsive-item" src="./assets/charts/patenty.html" allowfullscreen align="middle"></iframe>
+  </div>
+  <div id="nav-tabs2">
+  <div class="col-md-6">
+
+    <div class="card card-nav-tabs">
+        <div class="card-header card-header-default">
+            <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+            <div class="nav-tabs-navigation">
+                <div class="nav-tabs-wrapper">
+                    <ul class="nav nav-tabs" data-tabs="tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#info2" data-toggle="tab">
+                                <i class="material-icons">info_outline</i> Informacje
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#zrodlo6" data-toggle="tab">
+                                <i class="material-icons">input</i> Źródło
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card-body ">
+            <div class="tab-content">
+                <div class="tab-pane active" id="info6">
+                    <h5>&#9758; Kliknij w wybrany obszar, żeby poznać kraje obowiązywania poszczególnych patentów.</br></br>
+                       <!-- &#9758;  -->
+                     </h5>
+                </div>
+                <div class="tab-pane" id="zrodlo6">
+                <h5>
+                    &#9758; Dane wewnętrzne GK Polpharma.
+                  </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
+
 <div class="section section-tabs" id='hc'>
     <div class="container">
         <!--                nav tabs	             -->
@@ -1487,7 +1514,7 @@ Co roku zatrudnienie w Polpharmie znajduje
         </br></br>
 </div>
 </div>
-<canvas id="bar-chart-grouped2" width="w50" height="h25"></canvas>
+<canvas id="bar-chart-grouped2" style="width: 200px; height: 80px"></canvas>
 
 <script>
 
@@ -1589,14 +1616,18 @@ new Chart(document.getElementById("bar-chart-grouped2"), {
 </div>
 
 </div>
-
+<p align="justify">Polpharma przywiązuje dużą wagę do zatrzymywania dotychczasowych
+pracowników i przyciągania nowych talentów poprzez rozbudowany system
+szkoleń. W 2012 roku przeznaczyła na ten cel 1,2 mln zł, a w 2016 roku niemal
+4,5 mln zł. Od 2012 roku Grupa przeznaczyła na szkolenia i finansowanie
+studiów podyplomowych i doktoranckich w sumie ponad 17 mln zł</p>
 
               <div class="section text-center">
                   <div class="row">
                     <h3>Wydatki Polpharmy na szkolenia (mln zł)</h3>
           </div>
           </div>
-          <canvas id="line-chart2" width="w50" height="h25"></canvas>
+          <canvas id="line-chart2" style="width: 200px; height: 80px"></canvas>
 
           <script>
 
@@ -1606,7 +1637,7 @@ new Chart(document.getElementById("bar-chart-grouped2"), {
             data: {
               labels: [2012,2013,2014,2015,2016],
               datasets: [{
-                  data: [1.468574,	2.553805,	4.249983,	4.892881,	4.480879],
+                  data: [1.469,	2.554,	4.250,	4.893,	4.481],
                   label: "Wydatki na szkolenia w mln zł",
                   backgroundColor: 'rgba(2, 69, 148,.7)',
                   borderColor: "#024594",
@@ -1678,123 +1709,6 @@ new Chart(document.getElementById("bar-chart-grouped2"), {
 
 
 
-          <div class="container">
-              <div class="section text-center">
-                <div class="row">
-
-
-                            <h3> Pracownicy B&R w polskim sektorze farmaceutycznym (%)</h3>
-                  </br></br>
-</div>
-</div>
-                  <canvas id="bar-chart-grouped" width="w50" height="h25"></canvas>
-
-                  <script>
-
-                  Chart.defaults.global.animation.duration = 1500;
-                  Chart.defaults.global.defaultFontSize = 15;
-                  Chart.defaults.global.legend.position = 'bottom'
-                  Chart.defaults.global.elements.line.tension = 0
-
-                  var ctx = document.getElementById("bar-chart-grouped")
-                  var myChart = new Chart(ctx, {
-                      type: 'bar',
-                      data: {
-                        labels: ["2013", "2014", "2015", "2016"],
-                        datasets: [
-                          {
-                            label: "Udział pracowników B&R PPH w B&R sektora",
-                            backgroundColor: "rgb(2, 69, 148)",
-                            data: [20.3,35.3,39.1,42]
-                          }, {
-                            label: "Udział pracowników B&R PPH w PPH",
-                            backgroundColor: "#abadb8",
-                            data: [6.5,9.9,10.6,11]
-                          },
-                          {
-                            label: "Udział pracowników B&R w sektorze",
-                            backgroundColor: "#3c9fab",
-                            data: [6.5,5.7,5.2,5.6]
-                          }
-                        ]
-
-                      },
-
-                      options: {
-                        animation: {
-                          easing: 'easeOutBounce'
-                      },
-                        title: {
-                          display: false,
-                          text: 'Pracownicy B&R'
-                        },
-                      scales: {
-                          yAxes: [{
-                              ticks: {
-                                  beginAtZero: true,
-                                  max: 50,
-                                  fontColor: "rgba(0,0,0,0.5)",
-                                  fontStyle: "bold",
-                                  padding: 20
-                              }
-                          }],
-
-                          xAxes: [{
-                              ticks: {
-                                  fontColor: "rgba(0,0,0,0.5)",
-                                  fontStyle: "bold",
-                                  padding: 20
-                      }
-                          }]
-
-                      }
-                        }
-                  });
-
-
-                  </script>
-
-                  <div id="nav-tabs">
-                            <div class="col-md-6">
-
-                                <div class="card card-nav-tabs">
-                                    <div class="card-header card-header-default">
-                                        <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
-                                        <div class="nav-tabs-navigation">
-                                            <div class="nav-tabs-wrapper">
-                                                <ul class="nav nav-tabs" data-tabs="tabs">
-                                                    <li class="nav-item">
-                                                        <a class="nav-link active" href="#info3" data-toggle="tab">
-                                                            <i class="material-icons">info_outline</i> Informacje
-                                                        </a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#zrodlo3" data-toggle="tab">
-                                                            <i class="material-icons">input</i> Źródło
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body ">
-                                        <div class="tab-content">
-                                            <div class="tab-pane active" id="info3">
-                                                <h5>&#9758; Wydatki przedsiębiorstw sektora farmaceutycznego na badania i rozwój wzrosły o 24% w okresie 2013-2016. </br></br>
-                                                   &#9758; Inwestycje w B&R Polpharmy stanowiły ok. 40% wydatków całego sektora i miały stabilny udział w analizowanym okresie (Najedź na wykres, żeby sprawdzić dokładne wartości).
-                                                 </h5>
-                                            </div>
-                                            <div class="tab-pane" id="zrodlo3">
-                                            <h5> &#9758; GUS (2018), <i><a target="_blank" href="http://stat.gov.pl/obszary-tematyczne/roczniki-statystyczne/roczniki-statystyczne/rocznik-statystyczny-przemyslu-2017,5,11.html"> Rocznik statystyczny przemysłu 2017</i>, dział XI.</a> </li>
-                                                &#9758; Dane wewnętrzne GK Polpharma. </li>
-                                              </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                  </div>
-</div>
 
 
           <div class="section section-tabs" id='global'>
@@ -1810,16 +1724,79 @@ new Chart(document.getElementById("bar-chart-grouped2"), {
                         </div>
                       </div>
                     </div>
+                    <div class="container">
 
+                  </br></br>
+                              <p class='blockquote' text-align="justify">
+Dynamika rozwoju rynku leków równoważnych zarówno w kraju, jak i
+za granicą, ma kluczowe znaczenie dla rynku farmaceutycznego. Globalny
+trend wzrostu handlu tymi lekami tworzy szerokie możliwości
+ekspansji także przed polskimi producentami farmaceutycznymi.
+</p></br></br>
+<p align="justify">Polpharma wykorzystuje te możliwości w największym
+stopniu. To jedna z niewielu polskich firm farmaceutycznych,
+która odnotowuje przewagę eksportu nad
+importem i tym samym wyróżnia się pozytywnie na tle
+polskiego sektora, który cechuje wysoka importochłonność,
+a co za tym idzie – deficyt handlowy.
+Strategia eksportowa Grupy Polpharma wynika z
+rozpoznania korzystnych kierunków ekspansji handlowej.
+Na przesyconych rynkach europejskich firma
+wchodzi w alianse strategiczne z lokalnymi firmami.
+Natomiast głównym kierunkiem eksportowym są rynki
+wschodnie, na których Polpharma cieszy się wieloletnią
+renomą. Szczególnie dobrze widać to na przykładzie
+Rosji: co piąty artykuł przemysłowy sprzedawany do
+tego kraju przez polskie przedsiębiorstwo został wyprodukowany
+przez Polpharmę.
+Grupa Polpharma dominuje również strukturę
+polskiego eksportu do takich krajów jak Armenia, Azerbejdżan, Turkmenistan, Kirgistan i Uzbekistan.
+Farmaceutyki Polpharmy stanowią też niemal połowę
+eksportu do Albanii i trzecią część eksportu do
+Białorusi. Polpharma konsekwentnie rozwija także
+swoją obecność na rynkach południowo-azjatyckich w
+Wietnamie i Laosie.
+</p>
+</div>
                     <div class="container">
                       <h3> Eksport Grupy Polpharma 2015 r. (zł)
 
                         <!-- <div align="center"> -->
                             <div class="row">
-                              <div class="embed-responsive iframe-custom-charts">
+                              <div class="embed-responsive iframe-custom-charts-map2">
                                   <iframe class="embed-responsive-item" src="./assets/charts/trade2015.html" allowfullscreen></iframe>
                               </div>
                             </div>
+</div>
+
+                            <div class="container">
+<p align="justify">Polpharma swoją obecność na danym rynku
+uzależnia od jego potencjału w obszarze leków generycznych.
+Przyjmuje strategie inwestycji bezpośrednich na
+rynkach o wysokim potencjale, takich jak Rosja i Kazachstan,
+gdzie popiera akwizycje i połączenia z partnerami
+lokalnymi i posiada własne zakłady produkcyjne leków. Z
+tych krajów prowadzi eksport leków do krajów ościennych
+tradycyjnie powiązanych handlowo.
+W mniejszych rozwijających się rynkach Polpharma
+przyjmuje strategię rozwoju sprzedaży w oparciu o
+własne przedstawicielstwa handlowe lub lokalnych dystrybutorów
+leków eksportowanych z Polski. Taka
+strategia rozwoju gwarantuje Polpharmie elastyczność
+działania i zapewnia osiąganie wzrostu sprzedaży leków.</p>
+                            </div>
+
+
+
+                            <div class="container">
+                              <div class="section text-center">
+<h3> Szukasz pełnej wersji raportu? </h3></br></br>
+<div class="img-hover">
+<a href="#"><img src="./assets/img/raport.jpg" width="140",height="180"></a>
+<!-- <a class="btn btn-default" href="#" role="button">Wersja PDF</a> -->
+                            </div>
+                          </div>
+                        </div>
                           <!-- </div> -->
                               <!-- <div id="nav-tabs">
                                         <div class="col-md-6">
@@ -1857,7 +1834,7 @@ new Chart(document.getElementById("bar-chart-grouped2"), {
 
                  <!-- </div> -->
                <!-- </div> -->
-             </div>
+             <!-- </div> -->
 
                     <div class="section text-center">
 </div>
@@ -2027,7 +2004,7 @@ new Chart(document.getElementById("bar-chart-grouped2"), {
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="bmd-label-floating">Twoje imię i nazwisko</label>
-                                        <input type="email" class="form-control">
+                                        <input type="text" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -2043,12 +2020,21 @@ new Chart(document.getElementById("bar-chart-grouped2"), {
                             </div>
                             <div class="row">
                                 <div class="col-md-4 ml-auto mr-auto text-center">
-                                    <button class="btn btn-info btn-raised">
-                                        Wyślij wiadomość
+                                    <button class="btn btn-default btn-raised" type="submit">
+                                    <h6>    Wyślij wiadomość</h6>
                                     </button>
                                 </div>
                             </div>
                         </form>
+                        <div id="success_message" style="width:100%; height:100%; display:none; ">
+            <h3>Dziękujemy za wiadomość!</h3>
+        </div>
+        <div id="error_message"
+                style="width:100%; height:100%; display:none; ">
+                    <h3>Błąd</h3>
+                    Hmmm... Wystąpił błąd, proszę spróbować ponownie.
+
+        </div>
                     </div>
                 </div>
             </div>
