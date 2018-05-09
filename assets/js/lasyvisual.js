@@ -90,7 +90,7 @@ VisualJS.setup={//v.1.0.0
 	colors: {
 		map: {
 			max: 100, //If not enough colors, legend is deceiving and it's better to remove it
-			base: "#024594"
+			base: "#174891"
 		},
 		// series: ["#2b527b", "#a52a2a", "#008000", "#ffbf00", "#5959ff", "#ff5959", "#9acd32", "#af8d26"]
 		series: ["#024594"]
