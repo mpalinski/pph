@@ -368,10 +368,10 @@ rect:hover {  fill: #eeecf0; }
 <script>
 function dashboard(id, fData){
     var barColor = '#94bde5';
-    function segColor(c){ return {"Polpharma":"#024594", "Pozostałe firmy":"#abadb8"}[c]; }
+    function segColor(c){ return {Polpharma:"#024594", Inne:"#abadb8"}[c]; }
 
     // compute total for each state.
-    fData.forEach(function(d){d.total=d.freq.low+d.freq.mid;});
+    fData.forEach(function(d){d.total=d.freq.Polpharma+d.freq.Inne;});
 
     // function to handle histogram.
     function histoGram(fD){
@@ -409,8 +409,8 @@ function dashboard(id, fData){
             .attr("width", x.rangeBand())
             .attr("height", function(d) { return hGDim.h - y(d[1]); })
             .attr('fill',barColor)
-            .on("mouseover",mouseover)// mouseover is defined below.
-            .on("mouseout",mouseout);// mouseout is defined below.
+            .on("mouseover",mouseover)// mouseover is defined bePolpharma.
+            .on("mouseout",mouseout);// mouseout is defined bePolpharma.
 
         //Create the frequency labels above the rectangles.
         bars.append("text").text(function(d){ return d3.format(",")(d[1])})
@@ -545,14 +545,15 @@ function dashboard(id, fData){
         }
 
         function getLegend(d,aD){ // Utility function to compute percentage.
-            return d3.format("%")(d.freq/d3.sum(aD.map(function(v){ return v.freq; })));
+            return d3.format("%")(d.freq/d3.sum(aD.map(function(v){ return v.freq;
+            })));
         }
 
         return leg;
     }
 
     // calculate total frequency by segment for all state.
-    var tF = ['Polpharma','Pozostałe firmy'].map(function(d){
+    var tF = ['Polpharma','Inne'].map(function(d){
         return {type:d, freq: d3.sum(fData.map(function(t){ return t.freq[d];}))};
     });
 
@@ -567,16 +568,17 @@ function dashboard(id, fData){
 
 <script>
 var freqData=[
-// {State:'2012',freq:{low:119, mid:259}},
-{State:'2013',freq:{low:122, mid:242-122}}
-,{State:'2014',freq:{low:137, mid:269-137}}
-,{State:'2015',freq:{low:158, mid:321-158}}
-,{State:'2016',freq:{low:161, mid:273-161}}
+// {State:'2012',freq:{Polpharma:119, Inne:259}},
+{State:'2013',freq:{Polpharma:122, Inne:242-122}}
+,{State:'2014',freq:{Polpharma:137, Inne:269-137}}
+,{State:'2015',freq:{Polpharma:158, Inne:321-158}}
+,{State:'2016',freq:{Polpharma:161, Inne:273-161}}
 
 ];
 
 dashboard('#dashboard',freqData);
 </script>
+
 
 </br></br>
 
@@ -642,7 +644,7 @@ Kolejną pułapką jest niewłaściwe rozumienie innowacyjności w procesie wytw
 
 
 </br></br>
-<h3>W stronę Przemysłu 4.0.</h3>
+<h3>W stronę Przemysłu 4.0</h3>
 <p align="justify">
 W przypadku produkcji farmaceutycznej proces
 dostosowania do dzisiejszych standardów Przemysłu
